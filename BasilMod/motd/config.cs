@@ -13,14 +13,14 @@
 	Add message to be shown when player joins server.
 	BasilMod::motd_registerWelcome(
 		true,		//Show message in "System" channel. Message is shown if value is "true".
-		false,		//Show message in "Local" channel. Message is shown if value is "true".
+		true,		//Show message in "Local" channel. Message is shown if value is "true".
 		"message"	//Message text to be shown. Message support default coloring.
 	);
 	
 	Add periodic message to be shown to players.
 	BasilMod::motd_registerPeriodic(
-		1, 			//Interval of message display, in minutes.
-		false,		//Show message in "System" channel. Message is shown if value is "true".
+		15, 			//Interval of message display, in minutes.
+		true,		//Show message in "System" channel. Message is shown if value is "true".
 		true,		//Show message in "Local" channel. Message is shown if value is "true".
 		"message"	//Message text to be shown. Message support default coloring.
 	);
@@ -30,14 +30,14 @@
 $BasilMod::motd::welcome_delay = 5;
 
 //Example setup of greetings messages, and samples for messages with timeouts
-BasilMod::motd_registerWelcome(true, true, "This is system and message to display at system and local channels.");
-BasilMod::motd_registerWelcome(false, true, "This is local only message.");
-BasilMod::motd_registerWelcome(true, false, "This is system only message.");
+BasilMod::motd_registerWelcome(true, true, "Welcome To CRFTGaming's LiF Server Lite RP PvP & PvE");
+BasilMod::motd_registerWelcome(false, true, "WWW.CRFTGaming.ORG TeamSpeak:192.111.144.6");
+BasilMod::motd_registerWelcome(true, false, "Check The Website For Server Rules, Suggestions, & Bug Reports");
   
-BasilMod::motd_registerWelcome(true, false, "This server supports BasilMod::Pack. To enable TradeWindow and other mods, visit link http://my-kickass-server.earth/modpacks.");
+BasilMod::motd_registerWelcome(true, false, "This server supports BasilMod");
 BasilMod::motd_registerWelcome(true, false, "Follow rules of the server! Feel free to ask GM for help.");
 
-BasilMod::motd_registerPeriodic(1, true, false, "This message will appear every minute in System!");
-BasilMod::motd_registerPeriodic(5, false, true, "This is message to display every 5 minutes in Local chat");
+BasilMod::motd_registerPeriodic(1, true, false, "CRFTGaming's LiF RP Server");
+BasilMod::motd_registerPeriodic(5, false, true, "Are You A New Player ? Ask A GM For Your Starter Kit");
 
-BasilMod::motd_registerPeriodic(60, true, false, "Scheduled maintenance is performed every day at 00:00 GMT.");
+BasilMod::motd_registerPeriodic(45, true, false, "JOIN THE FORUMS ::: WWW.CRFTGAMING.ORG ::: TS:192.111.144.6");
