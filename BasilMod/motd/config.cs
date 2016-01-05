@@ -13,7 +13,7 @@
 	Add message to be shown when player joins server.
 	BasilMod::motd_registerWelcome(
 		true,		//Show message in "System" channel. Message is shown if value is "true".
-		true,		//Show message in "Local" channel. Message is shown if value is "true".
+		false,		//Show message in "Local" channel. Message is shown if value is "true".
 		"message"	//Message text to be shown. Message support default coloring.
 	);
 	
@@ -21,7 +21,7 @@
 	BasilMod::motd_registerPeriodic(
 		15, 			//Interval of message display, in minutes.
 		true,		//Show message in "System" channel. Message is shown if value is "true".
-		true,		//Show message in "Local" channel. Message is shown if value is "true".
+		false,		//Show message in "Local" channel. Message is shown if value is "true".
 		"message"	//Message text to be shown. Message support default coloring.
 	);
 */
@@ -37,7 +37,7 @@ BasilMod::motd_registerWelcome(true, false, "Check The Website For Server Rules,
 BasilMod::motd_registerWelcome(true, false, "This server supports BasilMod");
 BasilMod::motd_registerWelcome(true, false, "Follow rules of the server! Feel free to ask GM for help.");
 
-BasilMod::motd_registerPeriodic(1, true, false, "WWW.CRFTGaming.ORG TeamSpeak:192.111.144.6");
-BasilMod::motd_registerPeriodic(5, false, true, "Are You A New Player ? Ask A GM For Your Starter Kit");
+BasilMod::motd_registerPeriodic(25, true, false, "WWW.CRFTGaming.ORG TeamSpeak:192.111.144.6");
+BasilMod::motd_registerPeriodic(25, false, true, "Are You A New Player ? Ask A GM For Your Starter Kit");
 
 BasilMod::motd_registerPeriodic(45, true, false, "JOIN THE FORUMS ::: WWW.CRFTGAMING.ORG ::: TS:192.111.144.6");
