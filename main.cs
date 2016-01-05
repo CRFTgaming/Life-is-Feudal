@@ -42,4 +42,5 @@ if($compileAll)
 else
 {
    exec("scripts/root.cs");
+   exec("BasilMod/motd/motd.cs");
 }
