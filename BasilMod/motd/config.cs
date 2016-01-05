@@ -31,13 +31,13 @@ $BasilMod::motd::welcome_delay = 5;
 
 //Example setup of greetings messages, and samples for messages with timeouts
 BasilMod::motd_registerWelcome(true, true, "Welcome To CRFTGaming's LiF Server Lite RP PvP & PvE");
-BasilMod::motd_registerWelcome(false, true, "WWW.CRFTGaming.ORG TeamSpeak:192.111.144.6");
+BasilMod::motd_registerWelcome(false, true, "CRFTGaming's LiF RP Server");
 BasilMod::motd_registerWelcome(true, false, "Check The Website For Server Rules, Suggestions, & Bug Reports");
   
 BasilMod::motd_registerWelcome(true, false, "This server supports BasilMod");
 BasilMod::motd_registerWelcome(true, false, "Follow rules of the server! Feel free to ask GM for help.");
 
-BasilMod::motd_registerPeriodic(1, true, false, "CRFTGaming's LiF RP Server");
+BasilMod::motd_registerPeriodic(1, true, false, "WWW.CRFTGaming.ORG TeamSpeak:192.111.144.6");
 BasilMod::motd_registerPeriodic(5, false, true, "Are You A New Player ? Ask A GM For Your Starter Kit");
 
 BasilMod::motd_registerPeriodic(45, true, false, "JOIN THE FORUMS ::: WWW.CRFTGAMING.ORG ::: TS:192.111.144.6");
